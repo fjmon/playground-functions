@@ -139,9 +139,23 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, name) {
+  let lTec = [];
+  array.sort();
+  for (let i = 0; i < array.length; i += 1) {
+    let object = {
+      tech: array[i],
+      name: name
+    };
+    lTec.push(object);
+  }
+  if (lTec.length === 0) {
+    return 'Vazio!';
+  }
+  return lTec;
 }
+techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas');
+techList([], 'Lucas');
 
 module.exports = {
   calcArea,
