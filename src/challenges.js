@@ -17,10 +17,10 @@ calcArea(51, 1);
 
 // Desafio 3
 function splitSentence(string) {
-  let x = string.split(" ");
+  let x = string.split(' ');
   return x;
 }
-splitSentence("go Trybe");
+splitSentence('go Trybe');
 
 // Desafio 4
 function concatName(array) {
@@ -29,9 +29,9 @@ function concatName(array) {
   let juntos = ultimo + ", " + primeiro;
   return juntos;
 }
-let nomes1 = ["Lucas", "Cassiano", "Ferraz", "Paolillo"];
-let nomes2 = ["foguete", "não", "tem", "ré"];
-let nomes3 = ["captain", "my", "captain"];
+let nomes1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+let nomes2 = ['foguete', 'não', 'tem', 'ré'];
+let nomes3 = ['captain', 'my', 'captain'];
 console.log(concatName(nomes1));
 console.log(concatName(nomes2));
 console.log(concatName(nomes3));
@@ -68,20 +68,20 @@ highestCount([0, 0, 0]);
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
-    return "cat1";
-  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
-    return "cat2";
+    return 'cat1';
+  } if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+    return 'cat2';
   }
-  return "os gatos trombam e o rato foge";
+  return 'os gatos trombam e o rato foge';
 }
 catAndMouse(0, 3, 2);
 catAndMouse(0, 6, 12);
 catAndMouse(0, 0, 0);
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(num) {
 }
+
 
 // Desafio 9
 function encode() {
