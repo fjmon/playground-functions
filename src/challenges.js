@@ -80,8 +80,25 @@ catAndMouse(0, 0, 0);
 
 // Desafio 8
 function fizzBuzz(num) {
+  let resultado = [];
+  for (let i = 0; i < num.length; i += 1) {
+    let div3 = num[i] % 3 === 0
+    let div5 = num[i] % 5 === 0
+    let ndiv3 = num[i] % 3 !== 0
+    let ndiv5 = num[i] % 5 !== 0
+    if (div3 && div5) {
+      resultado.push('fizzBuzz');
+    } else if (div3 && ndiv5) {
+      resultado.push('fizz');
+    } else if (div5 && ndiv3) {
+      resultado.push("buzz");
+    } else {
+      (ndiv3 && ndiv5)
+      resultado.push('bug!');
+    }
+  }
+  return resultado;
 }
-
 
 // Desafio 9
 function encode() {
