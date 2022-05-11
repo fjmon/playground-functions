@@ -30,7 +30,7 @@ splitSentence('go Trybe');
 function concatName(array) {
   let ultimo = array[array.length - 1];
   let primeiro = array[0];
-  let juntos = ultimo + ", " + primeiro;
+  let juntos = `${ultimo}, ${primeiro}`;
   return juntos;
 }
 let nomes1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
