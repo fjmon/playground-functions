@@ -106,42 +106,27 @@ function fizzBuzz(num) {
 fizzBuzz([2, 15, 7, 9, 45]);
 
 // Desafio 9
-function encode(string) {
-  let cod = string.split('');
+function encode(cod) {
   for (let i = 0; i < cod.length; i += 1) {
-    if (cod[i] === 'a') {
-      cod[i] = 1;
-    } if (cod[i] === 'e') {
-      cod[i] = 2;
-    } if (cod[i] === 'i') {
-      cod[i] = 3;
-    } if (cod[i] === 'o') {
-      cod[i] = 4;
-      cod[i] = 5;
-    }
+    cod = cod.replace('a', '1');
+    cod = cod.replace('e', '2');
+    cod = cod.replace('i', '3');
+    cod = cod.replace('o', '4');
+    cod = cod.replace('u', '5');
   }
-  return cod.join('');
+  return cod;
 }
-encode('hi there!')
+encode('hi there!');
 
-function decode(string) {
-  let dec = string.split('');
+function decode(dec) {
   for (let i = 0; i < dec.length; i += 1) {
-    if (dec[i] === '1') {
-      dec[i] = 'a';
-    }
-    if (dec[i] === '2') {
-      dec[i] = 'e';
-    }
-    if (dec[i] === '3') {
-      dec[i] = 'i';
-    }
-    if (dec[i] === '4') {
-      dec[i] = 'o';
-      dec[i] = 'u';
-    }
+    dec = dec.replace('1', 'a');
+    dec = dec.replace('2', 'e');
+    dec = dec.replace('3', 'i');
+    dec = dec.replace('4', 'o');
+    dec = dec.replace('5', 'u');
   }
-  return dec.join('');
+  return dec;
 }
 decode('h3 th2r2!');
 
@@ -152,7 +137,7 @@ function techList(array, name) {
   for (let i = 0; i < array.length; i += 1) {
     let object = {
       tech: array[i],
-      name: name
+      name,
     };
     lTec.push(object);
   }
