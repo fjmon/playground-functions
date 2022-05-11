@@ -5,6 +5,10 @@ function compareTrue(x, y) {
   }
   return false;
 }
+compareTrue(true, true);
+compareTrue(true, false);
+compareTrue(false, true);
+compareTrue(false, false);
 
 // Desafio 2
 function calcArea(base, height) {
@@ -82,10 +86,10 @@ catAndMouse(0, 0, 0);
 function fizzBuzz(num) {
   let resultado = [];
   for (let i = 0; i < num.length; i += 1) {
-    let div3 = num[i] % 3 === 0
-    let div5 = num[i] % 5 === 0
-    let ndiv3 = num[i] % 3 !== 0
-    let ndiv5 = num[i] % 5 !== 0
+    let div3 = num[i] % 3 === 0;
+    let div5 = num[i] % 5 === 0;
+    let ndiv3 = num[i] % 3 !== 0;
+    let ndiv5 = num[i] % 5 !== 0;
     if (div3 && div5) {
       resultado.push('fizzBuzz');
     } else if (div3 && ndiv5) {
@@ -99,6 +103,7 @@ function fizzBuzz(num) {
   }
   return resultado;
 }
+fizzBuzz([2, 15, 7, 9, 45]);
 
 // Desafio 9
 function encode(string) {
@@ -117,6 +122,7 @@ function encode(string) {
   }
   return cod.join('');
 }
+encode('hi there!')
 
 function decode(string) {
   let dec = string.split('');
@@ -137,6 +143,7 @@ function decode(string) {
   }
   return dec.join('');
 }
+decode('h3 th2r2!');
 
 // Desafio 10
 function techList(array, name) {
